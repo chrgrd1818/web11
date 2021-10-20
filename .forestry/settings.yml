@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: foadm
 webhook_url: 
 sections:
+- type: directory
+  path: en
+  label: English
+  create: all
+  match: "**/*"
+  templates:
+  - fm_template_1
 - type: heading
   label: Content
 upload_dir: src/_static/img
