@@ -5,11 +5,12 @@ fields:
 - type: text
   name: title
   label: title
-- name: keyname
+- name: docKey
   type: text
   config:
     required: true
-  label: key name
+  label: Doc Key
+  description: Translation key
 - type: text
   name: description
   label: description
