@@ -95,7 +95,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Browsersync Overrides
-  
+/*  
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, browserSync) {
@@ -112,7 +112,7 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
     
   });
-
+*/
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function (err, bs) {
