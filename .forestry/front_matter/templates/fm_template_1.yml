@@ -30,3 +30,5 @@ fields:
     use_select: true
     source:
       type: simple
+pages:
+- src/en/blog/posts/5th-blog-post.md
