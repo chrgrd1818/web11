@@ -29,5 +29,3 @@ fields:
     use_select: true
     source:
       type: simple
-pages:
-- src/technology/en/tech1.md
