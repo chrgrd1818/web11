@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ dir }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{title}}
+    </title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/_static/css/style.css"/>
+    
+    <!-- open graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="lea-tortay">
+    <meta property="og:description" content="">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@lea_tortay">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+  </head>
+  <body id="theme-t1" class="">
+    {% include "./components/navbar.njk" %}
+
+    {{ content | safe }}
+
+    {% include "./partials/footer.njk" %}
+
+    <script src="/_static/js/alpine.js"></script>
+
+  </body>
+</html>

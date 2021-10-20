@@ -1,0 +1,31 @@
+items:
+  en:
+    - key: about
+      text: About
+      url: /about-us
+      categories: ['aboutcategory1', 'aboutcategory2']
+    - key : techno
+      text: Technology
+      url: /technology
+      categories: ['techcategory1', 'techcategory2', 'techcategory3']
+    - key: blog
+      text: Blog
+      url: /our-blog
+    - key: contact
+      text: Contact
+      url: /contact-us
+  vi:
+    - key: about
+      text: Gioi thieu
+      url: /gioi-thieu
+      categories: ['aboutcategory1', 'aboutcategory2']
+    - key : techno
+      text: Cong Nghe
+      url: /cong-nghe
+      categories: ['techcategory1', 'techcategory2', 'techcategory3']
+    - key: blog
+      text: Blog
+      url: /blog
+    - key: contact
+      text: Lien he
+      url: /lien-he

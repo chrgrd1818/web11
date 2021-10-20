@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Your Custom CSS Goes here*/
+.root,
+#root,
+#docs-root {
+  --primary: #367ee9;
+  --secondary: #a0aec0;
+  --accent: #718096;
+  --background: #fff;
+  --main: #0d0106;
+  --header: #2d3748;
+}
+
+body#theme-t1 {
+  @apply bg-white;
+}
+
+#theme-t1 .is-active {
+  @apply font-bold text-black
+}
+
+#theme-t1 .container_main {
+  @apply mx-auto lg:h-screen flex flex-col justify-center items-center
+}
+
+#theme-t1 .page_layout {
+  @apply max-w-4xl my-6 px-6 min-h-screen mx-auto;
+}
+
+#theme-t1 section {
+  @apply my-0;
+}
+
+#theme-t1 section article {
+  @apply mb-10;
+}
+#theme-t1 section .article-title {
+  @apply font-bold text-3xl text-gray-900 mb-1;
+}
+#theme-t1 section .article-date {
+  @apply text-sm leading-6 text-gray-500 mb-3;
+}
+#theme-t1 section .article-description {
+  @apply text-lg text-gray-700 mb-3;
+}
+#theme-t1 section .article-category {
+  @apply text-lg text-black underline;
+}
+#theme-t1 section a.article-more {
+  @apply blue-tx font-bold text-lg;
+}
+
+
+
+
+.blue-tx {
+  @apply text-blue-500 hover:text-blue-700
+}
+.blue-bg {
+  @apply bg-blue-500 hover:bg-blue-700
+}
+
+h1 {
+  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-3;
+}
+
+.apply-round-chip {
+  @apply text-xs px-3 font-medium  text-white rounded-full py-1.5 blue-bg;
+}
+
+.prose a {
+  @apply no-underline blue-tx;
+  
+}
+
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"]  {
+  @apply bg-gray-800 ;
+}
+
+

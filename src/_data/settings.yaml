@@ -1,0 +1,13 @@
+---
+name: WWW
+author: CG
+baseurl: "http://localhost:8080/"
+locale: vi # default locale.
+dir: "ltr" # default locale direction.
+locales:   # available locales.
+  - label: "English"
+    code: en
+    active: True
+  - label: "Tieng viet"
+    code: vi
+    active: True

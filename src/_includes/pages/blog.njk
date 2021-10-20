@@ -1,0 +1,13 @@
+<section class="blog_section">
+
+    {% include "partials/headline.njk" %}
+   
+    {% set postslist = collections.blogpost | LocaleFilter(locale) %}
+    {% for post in postslist | reverse %}
+
+        {% set __Readmore = btn_readmore %}
+        {% include "components/article-item_simple.njk" %}
+        
+    {% endfor %}
+
+</section>

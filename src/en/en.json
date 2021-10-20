@@ -1,0 +1,10 @@
+{
+    "locale": "en",
+    "dir": "ltr",
+    "tags" : "en",
+    "layout": "page_layout",
+    "title": "Welcome",
+    "permalink": "/en/index.html",
+    "docKey": "home",
+    "btn_readmore": "Read more"
+}

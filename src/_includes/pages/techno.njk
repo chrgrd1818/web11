@@ -1,0 +1,37 @@
+<section class="techno_section">
+
+    {% include "partials/headline.njk" %}
+
+    {% set postslist = collections.technopost | LocaleFilter(locale) %}
+    {% for post in postslist | reverse %}
+          
+        {% set __Readmore = btn_readmore %}
+        {% include "components/article-item_simple.njk" %}
+        
+    {% endfor %}
+</section>
+
+
+    <!--
+    <div class="category-tabs bg-white">
+        <nav class="flex flex-col sm:flex-row">
+    
+            {% for item in navigation.items %}
+            {% if item.key === 'TECH' and item.categories %}
+                {% for i in item.categories %}
+
+                <button data-label="{{ i | trim }}" class="text-gray-800 mr-8 mb-4 p-4 block hover:text-black focus:outline-none border-2 font-medium border-purple-500">
+                    {{ i }}
+                </button>
+            
+                {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </nav>
+    </div>
+    {#
+    {% set selected = afilter %}
+
+    {% set postslist = collections.techno | categoryFilter(selected) %}
+    #}
+    -->
