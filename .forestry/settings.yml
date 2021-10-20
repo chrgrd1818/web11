@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: foadm
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: en
   label: English
@@ -11,8 +13,6 @@ sections:
   match: "**/*"
   templates:
   - fm_template_1
-- type: heading
-  label: Content
 upload_dir: src/_static/img
 public_path: "/_static/img"
 front_matter_path: ".forestry/front_matter/templates"
