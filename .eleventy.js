@@ -2,14 +2,14 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
-const fs = require("fs");
-const navigation = require('@11ty/eleventy-navigation');
+//const fs = require("fs");
+//const navigation = require('@11ty/eleventy-navigation');
 
 
 
 module.exports = function (eleventyConfig) {
 
-  eleventyConfig.addPlugin(navigation);
+  //eleventyConfig.addPlugin(navigation);
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -18,13 +18,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   // human readable date
-  eleventyConfig.addFilter("readableDate", (dateObj, lg) => {
+  eleventyConfig.addFilter("localeDate", (dateObj, lg) => {
     lg = lg ? lg : "en";
     return DateTime.fromJSDate(dateObj).setLocale(lg).toLocaleString(DateTime.DATE_FULL);
   });
 
  
-
   eleventyConfig.addFilter("categoryFilter", function(collection, cat) {
     let filtered = collection.filter((p) => p.data.category === cat);
     return filtered || [];
@@ -40,26 +39,11 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob("./src/vi/blog/posts/*.md");
   });
 
-  eleventyConfig.addCollection("englishCollections", function(collectionApi) {
-    let filtered = collectionApi.getFilteredByGlob(".src/en/*")
-    return filtered || [];
-  });
-
-  eleventyConfig.addCollection("EnTechnoPosts", function(collection) {
-    return collection.getFilteredByTags("en", "techno", "post");
-  });
-
-  eleventyConfig.addCollection("ViTechnoPosts", function(collectionApi) {
+    eleventyConfig.addCollection("ViTechnoPosts", function(collectionApi) {
     return collectionApi.getFilteredByTags("vi", "techno", "post");
   });
 
-  eleventyConfig.addCollection("EnBlogPosts", function(collectionApi) {
-    return collectionApi.getFilteredByTags("en", "blog", "post");
-  });
-
-  eleventyConfig.addCollection("ViBlogPosts", function(collectionApi) {
-    return collectionApi.getFilteredByTags("vi", "blog", "post");
-  });
+ 
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -81,7 +65,6 @@ module.exports = function (eleventyConfig) {
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
     if (outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
@@ -112,7 +95,7 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
     
   });
-*/
+
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function (err, bs) {
@@ -127,9 +110,8 @@ module.exports = function (eleventyConfig) {
       }
     }
   });
+*/
 
-  // Let Eleventy transform HTML files as nunjucks
-  // So that we can use .html instead of .njk
   return {
     dir: {
       input: "src",
