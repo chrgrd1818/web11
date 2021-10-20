@@ -1,7 +1,7 @@
 ---
-name: WWW
+name: Web11
 author: CG
-baseurl: "http://localhost:8080/"
+baseurl: "https://web11.pages.dev/"
 locale: vi # default locale.
 dir: "ltr" # default locale direction.
 locales:   # available locales.
