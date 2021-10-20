@@ -6,13 +6,6 @@ webhook_url:
 sections:
 - type: heading
   label: Content
-- type: directory
-  path: src/technology
-  label: Technology
-  create: all
-  match: "**/*.md"
-  templates:
-  - fm_template_1
 upload_dir: src/_static/img
 public_path: "/_static/img"
 front_matter_path: ".forestry/front_matter/templates"
