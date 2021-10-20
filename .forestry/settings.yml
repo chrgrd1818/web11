@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: adm
+admin_path: foadm
 webhook_url: 
 sections:
 - type: heading
