@@ -3,7 +3,7 @@ title: This is my first post
 description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
   ministrarum vestibus iudice, fratri inque agit ait.
 author: CG
-date: 2020-09-01
+date: 2020-10-19T17:00:00Z
 tags: []
 docKey: first-blogpost
 
