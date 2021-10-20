@@ -117,9 +117,9 @@ module.exports = function (eleventyConfig) {
     callbacks: {
       ready: function (err, bs) {
         bs.addMiddleware('*', (req, res) => {
-          if (req.url === '/*') {
+          if (req.url === '/') {
             res.writeHead(301, {
-              location: '/vi/*'
+              location: '/vi/'
             });
             res.end();
           }
