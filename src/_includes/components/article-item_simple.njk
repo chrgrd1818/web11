@@ -6,7 +6,7 @@
     </h2>
     <p class="article-date">
         <time>
-            {{ post.date | readableDate(locale) }}
+            {{ post.date | localeDate(locale) }}
         </time>
     </p>
     {% if post.data.description %}

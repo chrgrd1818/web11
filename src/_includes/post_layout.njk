@@ -1,11 +1,11 @@
 ---
 layout: page_layout
 ---
-{% set foo = 'qwe' %}
+
 <section class="post_section">
     <div class="pb-5 mb-5 border-b border-gray-100">   
         <p class="text-center text-base leading-6 font-medium text-gray-500">
-            <time> {{ date | readableDate(locale) }}
+            <time> {{ date | localeDate(locale) }}
             {% if post.data.author %}    
             ~ {{ author }}
             {% endif %}
