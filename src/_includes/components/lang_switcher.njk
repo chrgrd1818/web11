@@ -1,5 +1,5 @@
 {% for lgg in settings.locales %}
-    {% if loop.first %}<ul class="inline-flex space-x-4">{% endif %}
+    {% if loop.first %}<div class="inline-grid grid-cols-2 ">{% endif %}
 
     {# set translatedUrl to the homepage of that language by default #}
     {% set translatedUrl = "/" + lgg.code + "/" %}
@@ -20,11 +20,11 @@
     {% endfor %}
 
 
-    <li class="flex-1">
+    <div>
         <a onclick="save( '{{lgg.code }}' )" class="c-lggnav__link  {{ activeClass }} key-{{ keyname }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
-    </li>
+    </div>
 
-    {% if loop.last %}</ul>{% endif %}
+    {% if loop.last %}</div>{% endif %}
 {% endfor %}
 
 <script>
