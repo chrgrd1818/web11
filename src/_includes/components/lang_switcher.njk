@@ -21,8 +21,16 @@
 
 
     <li class="c-lggnav__item">
-        <a class="c-lggnav__link  {{ activeClass }} key-{{ keyname }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
+        <a onclick="save( '{{lgg.code }}' )" class="c-lggnav__link  {{ activeClass }} key-{{ keyname }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
     </li>
 
     {% if loop.last %}</ul>{% endif %}
 {% endfor %}
+
+<script>
+localStorage.setItem('test', "123");
+function save(lg) {
+    localStorage.setItem('language', lg);
+}
+
+</script>

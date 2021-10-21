@@ -1,5 +1,8 @@
 items:
   en:
+    - key: home
+      text: Home
+      url: /home/
     - key: about
       text: About
       url: /about-us/
@@ -15,6 +18,9 @@ items:
       text: Contact
       url: /contact-us/
   vi:
+    - key: home
+      text: Trang Chu
+      url: /trang-chu/
     - key: about
       text: Gioi thieu
       url: /gioi-thieu/

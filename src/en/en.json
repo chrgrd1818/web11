@@ -3,8 +3,8 @@
     "dir": "ltr",
     "tags" : "en",
     "layout": "page_layout",
-    "title": "Welcome",
-    "permalink": "/en/index.html",
+    "title": "Home",
+    "permalink": "{{ title | slug }}/",
     "docKey": "home",
     "btn_readmore": "Read more"
 }

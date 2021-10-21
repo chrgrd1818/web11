@@ -1,6 +1,6 @@
 {
     "title": "Lien He",
-    "permalink": "/vi/lien-he/",
+    "permalink": "{{ title | slug }}/",
     "docKey": "contact",
     "intro": "Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis ministrarum vestibus iudice, fratri inque agit ait."
 

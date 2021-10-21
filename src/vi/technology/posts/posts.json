@@ -1,5 +1,5 @@
 {
     "layout": "post_layout",
     "tags" : ["technopost"],
-    "permalink": "{{ base }}{{ title | slug }}/"
+    "permalink": "{{ base }}/{{ title | slug }}/"
 }

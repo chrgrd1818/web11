@@ -1,6 +1,6 @@
 {
     "title": "Contact us",
-    "permalink": "/en/contact-us/",
+    "permalink": "{{ title | slug }}/",
     "docKey": "contact",
     "intro": "Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis ministrarum vestibus iudice, fratri inque agit ait."
 

@@ -1,5 +1,5 @@
 {
     "layout": "post_layout",
-    "permalink": "{{ base }}{{ title | slug }}/",
+    "permalink": "{{ base }}/{{ title | slug }}/",
     "tags": ["blogpost"]
 }

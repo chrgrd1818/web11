@@ -1,9 +1,9 @@
 {
     "title": "Technology",
-    "permalink": "/en/technology/",
+    "permalink": "{{ title | slug }}/",
     "docKey": "techno",
     "tags": ["techno"],
-    "base": "/en/technology/"
+    "base": "technology"
 
 }
 

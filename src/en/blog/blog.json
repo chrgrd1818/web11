@@ -1,9 +1,9 @@
 {
     "title": "Our Blog",
     "docKey": "blog",
-    "permalink": "/en/our-blog/",
+    "permalink": "{{ title | slug }}/",
     "tags": ["blog"],
-    "base": "/en/our-blog/"
+    "base": "our-blog"
     
 }
 

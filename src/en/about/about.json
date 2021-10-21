@@ -1,6 +1,6 @@
 {
     "title": "About us",
-    "permalink": "/en/about-us/",
+    "permalink": "{{ title | slug }}/",
     "docKey": "about",
     "intro": "Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis ministrarum vestibus iudice, fratri inque agit ait."
 }
