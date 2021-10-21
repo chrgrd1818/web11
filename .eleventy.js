@@ -59,7 +59,8 @@ module.exports = function (eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./_static/js/alpine.js",
     "./src/_static/img": "./_static/img",
-    "./src/favicon.ico": "./favicon.ico"
+    "./src/favicon.ico": "./favicon.ico",
+    "./src/robots.txt": "./robots.txt"
   });
 
 

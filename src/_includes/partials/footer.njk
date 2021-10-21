@@ -7,9 +7,9 @@
         <small class="text-gray-500">Copyright ©
             {{settings.name}}
             2020-2030. Made by {{settings.author}}
+            <span x-data="{ message: ' with AlpineJS, TailwindCSS and 11ty/Neat' }" x-text="message"></span>
         </small>
-        <small x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></small>
-        {{locale}}
+        
     </div>
 </footer>
 

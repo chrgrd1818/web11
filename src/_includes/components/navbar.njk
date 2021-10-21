@@ -26,11 +26,11 @@
           
 
                 <ul id="nav_list" class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
-                    {% for item in navPages %}
+                    {% for item in navPages %}{% if not loop.first%}
                         <li class="nav__item mr-3">
                             <a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4" href="{{ item.url | url }}">{{ item.text}}</a>
                         </li>
-                    {% endfor %}
+                    {% endif %}{% endfor %}
                 </ul>
 
            
