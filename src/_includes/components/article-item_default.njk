@@ -1,0 +1,13 @@
+{% set _title = post.data.title %}
+{% set _link = post.url | url %}
+{% set _time = post.date | localeDate(locale) %}
+{% set _desc = post.data.description %}
+{% set _caty = post.data.category %}
+{% set _img = "src/_static/img/blog-placeholder-img.jpg" %}
+{% set _img-alt = "blog-placeholder-img" %}
+
+
+<article>
+{{ title }}
+</article>
+

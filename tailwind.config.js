@@ -14,6 +14,10 @@ module.exports = {
       colors: {},
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+       borderWidth: ['hover'],
+      }
+    },
   plugins: [require("@tailwindcss/typography")],
 };
