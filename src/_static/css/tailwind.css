@@ -13,6 +13,10 @@
 
 }
 
+.seablue {
+  font-color: #5881c0;
+}
+
 body#theme-t1 {
   @apply bg-white;
 }
