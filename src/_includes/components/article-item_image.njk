@@ -3,13 +3,13 @@
 {% set _time = post.date | localeDate(locale) %}
 {% set _desc = post.data.description %}
 {% set _caty = post.data.category %}
-{% set _img = "/_static/img/blog-placeholder-img.jpg" %}
+{% set _img = "/_static/img/placeholder-1.png" %}
 {% set _imgalt = "blog-placeholder-img" %}
 {% set _vues = _title.length + 10 * _link.length %}
 
 
 <article>
-    <div class="h-full border-2 border-gray-200  hover:border-gray-400 rounded-lg overflow-hidden">
+    <div class="h-full border-2 border-gray-200  rounded-lg overflow-hidden">
         <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ _img }}" alt="{{ _imgalt }}">
         <div class="p-6">
             {% if _caty %}
