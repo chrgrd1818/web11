@@ -1,47 +1,59 @@
-<section class="techno_section">
-
+<section class="techno_section" x-data="{ cat: 'ALL' }">
+<style>
+      .active {
+        color: black;
+      }
+    </style>
     {% include "partials/headline.njk" %}
-    <div class="mx-auto mb-12">
-        <div class="space-x-4 ">
-            <div class="inline-block bg-yellow-600 text-white font-medium p-4 mb-2 rounded"><a href="">TECHCATEGORY1</a></div>
-            <div class="inline-block bg-yellow-600 text-white font-medium p-4 mb-2rounded"><a href="">TECHCATEGORY1</a></div>
-            <div class="inline-block bg-yellow-600 text-white font-medium p-4 mb-2 rounded"><a href="">TECHCATEGORY1</a></div>
+   
+<div class="grid grid-cols-1 grid-cols-3 gap-32">
+    <div class="col-span-3 md:col-span-2">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            {% set postslist = collections.technopost | LocaleFilter(locale) %}
+            {% for post in postslist | reverse %}
+                
+                {% set __Readmore = btn_readmore %}
+                {% set __All = btn_all %}
+                {% include "components/article-item_image.njk" %}
+                
+            {% endfor %}
         </div>
     </div>
+    <div class="w-max">
+            <div class="category-tabs bg-white">
+                <h2 class="font-medium">CATEGORIES</h2>
+                <nav class="border-0 ">
+                        <div class="bg-yellow-600 text-white font-medium p-4 my-4 rounded w-max ">
+                            <button :class="{ 'active': cat === 'ALL' }" @click="cat = 'ALL'">
+                            {{ btn_all | upper }}
+                            </button>
+                        </div>
+                    {% for item in navigation.items[locale] %}
+                    {% if item.key === 'techno' and item.categories %}
+                        {% for i in item.categories %}
 
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
-        {% set postslist = collections.technopost | LocaleFilter(locale) %}
-        {% for post in postslist | reverse %}
-            
-            {% set __Readmore = btn_readmore %}
-            {% include "components/article-item_image.njk" %}
-            
-        {% endfor %}
-       
+                        <div class="bg-yellow-600 text-white font-medium p-4 my-4 rounded w-max ">
+                            <button :class="{ 'active': cat === '{{ i }}' }" @click="cat = '{{ i }}'">
+                            {{ i | upper }}
+                            </button>
+                        </div>
+                            
+                        {% endfor %}
+                    {% endif %}
+                    {% endfor %}
+                </nav>
+        </div>
     </div>
+</div>
 </section>
 
 
-    <!--
-    <div class="category-tabs bg-white">
-        <nav class="flex flex-col sm:flex-row">
-    
-            {% for item in navigation.items %}
-            {% if item.key === 'TECH' and item.categories %}
-                {% for i in item.categories %}
 
-                <button data-label="{{ i | trim }}" class="text-gray-800 mr-8 mb-4 p-4 block hover:text-black focus:outline-none border-2 font-medium border-purple-500">
-                    {{ i }}
-                </button>
-            
-                {% endfor %}
-            {% endif %}
-            {% endfor %}
-        </nav>
-    </div>
+
     {#
     {% set selected = afilter %}
 
     {% set postslist = collections.techno | categoryFilter(selected) %}
     #}
-    -->
+    

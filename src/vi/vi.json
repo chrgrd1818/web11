@@ -5,5 +5,7 @@
     "layout": "page_layout",
     "title": "Trang Chu",
     "permalink": "{{ title | slug }}/",
-    "docKey": "home"  
+    "docKey": "home",
+    "btn_readmore": "Doc them",
+    "btn_all": "Tac ca" 
 }

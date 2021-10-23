@@ -4,8 +4,7 @@
     "permalink": "{{ title | slug }}/",
     "docKey": "techno",
     "tags": ["techno"],
-    "base": "cong-nghe",
-    "btn_readmore": "Xem them"
+    "base": "cong-nghe"
 
 }
 

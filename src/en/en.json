@@ -6,5 +6,6 @@
     "title": "Home",
     "permalink": "{{ title | slug }}/",
     "docKey": "home",
-    "btn_readmore": "Read more"
+    "btn_readmore": "Read more",
+    "btn_all": "All"
 }
