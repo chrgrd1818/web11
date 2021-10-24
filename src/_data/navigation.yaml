@@ -1,37 +1,72 @@
+
+config:
+  depth: 1
+  root: root
+  visible: True
 items:
   en:
     - key: home
       text: Home
-      url: /home/
+      parent: root
+      slug: home
     - key: about
-      text: About
-      url: /about-us/
-      categories: ['aboutcategory1', 'aboutcategory2']
+      text: About us
+      parent: root
+      slug: about-us
     - key : techno
       text: Technology
-      url: /technology/
-      categories: ['techcategory1', 'techcategory2', 'techcategory3']
+      parent: root
+      slug: technology
     - key: blog
-      text: Blog
-      url: /our-blog/
+      text: Our Blog
+      parent: root
+      slug: our-blog
     - key: contact
-      text: Contact
-      url: /contact-us/
+      text: Contact us
+      parent: root
+      slug: contact-us
+    - key : techcat1
+      text: Tech category 1
+      parent: techno
+      slug: techcategory1
+    - key : techcat2
+      text: Tech category 2
+      parent: techno
+      slug: techcategory2
+    - key : techcat3
+      text: Tech category 3
+      parent: techno
+      slug: techcategory3
   vi:
     - key: home
       text: Trang Chu
-      url: /trang-chu/
+      parent: root
+      slug: trang-chu
     - key: about
       text: Gioi thieu
-      url: /gioi-thieu/
-      categories: ['aboutcategory1', 'aboutcategory2']
+      parent: root
+      slug: gioi-thieu
     - key : techno
       text: Cong Nghe
-      url: /cong-nghe/
-      categories: ['techcategory1', 'techcategory2', 'techcategory3']
+      parent: root
+      slug: cong-nghe
     - key: blog
       text: Blog
-      url: /blog/
+      parent: root
+      slug: blog
     - key: contact
       text: Lien he
-      url: /lien-he/
+      parent: root
+      slug: lien-he
+    - key : techcat1
+      text: Tech category 1
+      parent: techno
+      slug: techcategory1
+    - key : techcat2
+      text: Tech category 2
+      slug: techcategory2
+      parent: techno
+    - key : techcat3
+      text: Tech category 3
+      parent: techno
+      slug: techcategory3

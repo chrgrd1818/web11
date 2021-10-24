@@ -1,0 +1,18 @@
+---
+pagination:
+  data: catdata
+  size: 1
+  alias: topics
+catdata:
+ - techcategory1 
+ - techcategory2 
+ - techcategory3 
+permalink: "{{ base }}/{{ topics | slug }}/"
+---
+
+{% set selected = topics | slug %}
+
+{% include "pages/techno_topic.njk" %}
+
+
+

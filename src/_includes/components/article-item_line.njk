@@ -1,0 +1,29 @@
+{% set _title = post.data.title %}
+{% set _link = post.url | url %}
+{% set _time = post.date | localeDate(locale) %}
+{% set _desc = post.data.description %}
+{% set _caty = post.data.category %}
+
+<article>
+    <h2 class="font-serif text-3xl font-medium text-gray-800 mb-2">
+            <a href="{{ _link }}">{{ _title }}</a>
+    </h2>
+    {% if _caty %}
+    <h3 class="tracking-widest text-sm font-medium text-yellow-600 mb-2">
+        <a href="/{{base}}/{{ _caty | slug }}/">
+        {{ _caty | upper }}
+        </a>
+    </h3>
+    {% endif %}
+    
+    <p class="">
+        {% if _desc %}
+            <span class="font-light text-lg text-gray-700 mb-4">{{ _desc }}</span>
+        {% endif %}
+        <a  href="{{ _link }}" class="font-medium text-blue-900 hover:text-blue-400">
+        {{ __Readmore }}   
+        </a>
+    </p>
+    
+    
+</article>

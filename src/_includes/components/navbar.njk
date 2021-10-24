@@ -1,9 +1,9 @@
 <div class="w-full sticky top-0 bg-white z-50">
     <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
+        {% set navData = navigation.items[locale] %}
         <!--Logo etc-->
         <div class="logo text-gray-900">
-        {% set localehome = navigation.items[locale][0].url %}
-            <a href="{{ localehome }}" class="m-0 p-0" >
+            <a href="/{{ navData[0].slug }}/" class="m-0 p-0" >
                 <span class="inline-block -mb-px pr-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -23,13 +23,14 @@
         <!--Menu-->
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
          
-            {% set navPages = navigation.items[locale] %}
+            {% set navPages = navData %}
           
 
                 <ul id="nav_list" class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
-                    {% for item in navPages %}{% if not loop.first%}
+                    {% for item in navPages %}{% if item.parent== "root" and item.key != "home"%}
                         <li class="nav__item mr-3">
-                            <a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4" href="{{ item.url | url }}">{{ item.text}}</a>
+                            <a @click="isOpen = false" class="text-ml inline-block text-gray-900 font-medium no-underline hover:text-blue-400 py-2 px-4" 
+                            href="/{{ item.slug }}/">{{ item.text}}</a>
                         </li>
                     {% endif %}{% endfor %}
                 </ul>

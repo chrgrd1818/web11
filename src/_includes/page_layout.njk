@@ -2,15 +2,15 @@
 layout: default_layout
 ---
 {# prose max-w-none #}
-<div class="w-full bg-blue-600">
-        <h1 class="font-bold text-5xl text-white py-12">
+<div class="w-full bg-blue-900">
+    <div class="bg-repeat" style="background-image: url('/_static/img/water1.gif')">
+        <h1 class="font-bold text-5xl text-white py-12 mb-0">
             {{ title }}
         </h1>
+    </div>
 <div> 
 <div class="w-full bg-white">
-    <div class="container page_layout">
-        
-                {{ content | safe }}
-        
+    <div class="container max-w-screen-xl px-8 py-16 mx-auto min-h-screen">    
+        {{ content | safe }}    
     </div>
 </div>
