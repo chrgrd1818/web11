@@ -1,0 +1,25 @@
+---
+label: fm_template_page
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: docKey
+  label: docKey
+- type: text
+  name: permalink
+  label: permalink
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: base
+  label: base
+- type: text
+  name: btn_readmore
+  label: btn_readmore
