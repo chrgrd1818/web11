@@ -31,7 +31,7 @@ fields:
       label: Display text
     - type: text
       name: parent
-      label: 'Parent key '
+      label: Parent key
     - type: text
       name: slug
       label: Slug
