@@ -17,24 +17,24 @@ fields:
     label: visible
 - type: field_group
   name: items
-  label: items
+  label: Menu items
   fields:
   - type: field_group_list
     name: en
-    label: en
+    label: English Menu
     fields:
     - type: text
       name: key
-      label: key
+      label: Translation key
     - type: text
       name: text
-      label: text
+      label: Display text
     - type: text
       name: parent
-      label: parent
+      label: 'Parent key '
     - type: text
       name: slug
-      label: slug
+      label: URL slug
   - type: field_group_list
     name: vi
     label: vi
