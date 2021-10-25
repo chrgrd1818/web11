@@ -1,9 +1,13 @@
 {
-    "title": "Our Blog",
-    "docKey": "blog",
-    "permalink": "{{ title | slug }}/",
-    "tags": ["blog"],
-    "base": "our-blog"
-    
+  "title": "Our Blog",
+  "docKey": "blog",
+  "permalink": "{{ title | slug }}/",
+  "tags": [
+    "blog"
+  ],
+  "base": "our-blog",
+  "priority": "High",
+  "date": "2021-10-18T04:41:16Z",
+  "visible": true,
+  "author": "CG"
 }
-
