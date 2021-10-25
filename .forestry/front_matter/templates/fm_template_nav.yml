@@ -46,6 +46,7 @@ fields:
       label: Slug
       config:
         required: true
+      description: Matches page uri without "/"
     config:
       labelField: key
   - type: field_group_list
@@ -75,6 +76,7 @@ fields:
       label: Slug
       config:
         required: true
+      description: Matches page uri without "/"
     config:
       labelField: key
 pages:
