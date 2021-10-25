@@ -1,13 +1,13 @@
 ---
-name: Web11
+name: Project11
 author: CG
-baseurl: "https://web11.pages.dev/"
-locale: vi # default locale.
-dir: "ltr" # default locale direction.
-locales:   # available locales.
-  - label: "English"
-    code: en
-    active: True
-  - label: "Tieng viet"
-    code: vi
-    active: True
+baseurl: https://web11.pages.dev/
+locale: vi
+dir: ltr
+locales:
+- label: English
+  code: en
+  active: true
+- label: Tieng viet
+  code: vi
+  active: true
