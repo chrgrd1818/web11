@@ -48,7 +48,7 @@ fields:
         required: true
       description: Matches page uri without "/"
     config:
-      labelField: key
+      labelField: text
   - type: field_group_list
     name: vi
     label: Vietnamese Menu
@@ -78,6 +78,6 @@ fields:
         required: true
       description: Matches page uri without "/"
     config:
-      labelField: key
+      labelField: text
 pages:
 - src/_data/navigation.yaml
