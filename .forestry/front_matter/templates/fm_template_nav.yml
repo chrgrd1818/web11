@@ -26,15 +26,26 @@ fields:
     - type: text
       name: key
       label: Translation key
+      description: A key name shared by translated versions
+      config:
+        required: true
     - type: text
       name: text
       label: Display text
+      config:
+        required: true
+      description: The translated title
     - type: text
       name: parent
       label: Parent key
+      description: Key of Parent menu item or root
+      config:
+        required: true
     - type: text
       name: slug
       label: Slug
+      config:
+        required: true
     config:
       labelField: key
   - type: field_group_list
@@ -44,15 +55,26 @@ fields:
     - type: text
       name: key
       label: Translation key
+      description: A key name shared by translated versions
+      config:
+        required: true
     - type: text
       name: text
       label: Display text
+      description: The translated title
+      config:
+        required: true
     - type: text
       name: parent
       label: Parent key
+      description: Key of Parent menu item or root
+      config:
+        required: true
     - type: text
       name: slug
       label: Slug
+      config:
+        required: true
     config:
       labelField: key
 pages:
