@@ -1,0 +1,53 @@
+---
+label: fm_template_nav
+hide_body: true
+fields:
+- type: field_group
+  name: config
+  label: config
+  fields:
+  - type: number
+    name: depth
+    label: depth
+  - type: text
+    name: root
+    label: root
+  - type: boolean
+    name: visible
+    label: visible
+- type: field_group
+  name: items
+  label: items
+  fields:
+  - type: field_group_list
+    name: en
+    label: en
+    fields:
+    - type: text
+      name: key
+      label: key
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: parent
+      label: parent
+    - type: text
+      name: slug
+      label: slug
+  - type: field_group_list
+    name: vi
+    label: vi
+    fields:
+    - type: text
+      name: key
+      label: key
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: parent
+      label: parent
+    - type: text
+      name: slug
+      label: slug
