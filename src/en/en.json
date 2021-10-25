@@ -1,12 +1,17 @@
 {
-    "locale": "en",
-    "dir": "ltr",
-    "tags" : "en",
-    "layout": "page_layout",
-    "title": "Home",
-    "permalink": "{{ title | slug }}/",
-    "docKey": "home",
-    "btn_readmore": "Read more",
-    "btn_all": "All",
-    "labels": {"CATEGORY": "CATEGORIES"}
+  "locale": "en",
+  "dir": "ltr",
+  "tags": "en",
+  "layout": "page_layout",
+  "title": "Home",
+  "permalink": "{{ title | slug }}/",
+  "docKey": "home",
+  "btn_readmore": "Read more",
+  "btn_all": "All",
+  "labels": {
+    "CATEGORY": "CATEGORIES"
+  },
+  "priority": "High",
+  "visible": true,
+  "date": "2021-10-25T04:39:08Z"
 }
