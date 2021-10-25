@@ -51,3 +51,5 @@ fields:
     - type: text
       name: slug
       label: slug
+pages:
+- src/_data/navigation.yaml

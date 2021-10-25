@@ -1,72 +1,72 @@
-
+---
 config:
   depth: 1
   root: root
-  visible: True
+  visible: true
 items:
   en:
-    - key: home
-      text: Home
-      parent: root
-      slug: home
-    - key: about
-      text: About us
-      parent: root
-      slug: about-us
-    - key : techno
-      text: Technology
-      parent: root
-      slug: technology
-    - key: blog
-      text: Our Blog
-      parent: root
-      slug: our-blog
-    - key: contact
-      text: Contact us
-      parent: root
-      slug: contact-us
-    - key : techcat1
-      text: Tech category 1
-      parent: techno
-      slug: techcategory1
-    - key : techcat2
-      text: Tech category 2
-      parent: techno
-      slug: techcategory2
-    - key : techcat3
-      text: Tech category 3
-      parent: techno
-      slug: techcategory3
+  - key: home
+    text: Home
+    parent: root
+    slug: home
+  - key: about
+    text: About us
+    parent: root
+    slug: about-us
+  - key: techno
+    text: Technology
+    parent: root
+    slug: technology
+  - key: blog
+    text: Our Blog
+    parent: root
+    slug: our-blog
+  - key: contact
+    text: Contact us
+    parent: root
+    slug: contact-us
+  - key: techcat1
+    text: Tech category 1
+    parent: techno
+    slug: techcategory1
+  - key: techcat2
+    text: Tech category 2
+    parent: techno
+    slug: techcategory2
+  - key: techcat3
+    text: Tech category 3
+    parent: techno
+    slug: techcategory3
   vi:
-    - key: home
-      text: Trang Chu
-      parent: root
-      slug: trang-chu
-    - key: about
-      text: Gioi thieu
-      parent: root
-      slug: gioi-thieu
-    - key : techno
-      text: Cong Nghe
-      parent: root
-      slug: cong-nghe
-    - key: blog
-      text: Blog
-      parent: root
-      slug: blog
-    - key: contact
-      text: Lien he
-      parent: root
-      slug: lien-he
-    - key : techcat1
-      text: Tech category 1
-      parent: techno
-      slug: techcategory1
-    - key : techcat2
-      text: Tech category 2
-      slug: techcategory2
-      parent: techno
-    - key : techcat3
-      text: Tech category 3
-      parent: techno
-      slug: techcategory3
+  - key: home
+    text: Trang Chu
+    parent: root
+    slug: trang-chu
+  - key: about
+    text: Gioi thieu
+    parent: root
+    slug: gioi-thieu
+  - key: techno
+    text: Cong Nghe
+    parent: root
+    slug: cong-nghe
+  - key: blog
+    text: Blog
+    parent: root
+    slug: blog
+  - key: contact
+    text: Lien he
+    parent: root
+    slug: lien-he
+  - key: techcat1
+    text: Tech category 1
+    parent: techno
+    slug: techcategory1
+  - key: techcat2
+    text: Tech category 2
+    slug: techcategory2
+    parent: techno
+  - key: techcat3
+    text: Tech category 3
+    parent: techno
+    slug: techcategory3
