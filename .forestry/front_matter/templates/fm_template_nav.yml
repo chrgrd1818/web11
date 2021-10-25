@@ -34,22 +34,26 @@ fields:
       label: 'Parent key '
     - type: text
       name: slug
-      label: URL slug
+      label: Slug
+    config:
+      labelField: key
   - type: field_group_list
     name: vi
-    label: vi
+    label: Vietnamese Menu
     fields:
     - type: text
       name: key
-      label: key
+      label: Translation key
     - type: text
       name: text
-      label: text
+      label: Display text
     - type: text
       name: parent
-      label: parent
+      label: Parent key
     - type: text
       name: slug
-      label: slug
+      label: Slug
+    config:
+      labelField: key
 pages:
 - src/_data/navigation.yaml
