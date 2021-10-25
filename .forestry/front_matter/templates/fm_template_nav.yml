@@ -4,17 +4,17 @@ hide_body: true
 fields:
 - type: field_group
   name: config
-  label: Menu config
+  label: Menu configs
   fields:
   - type: number
     name: depth
-    label: depth
+    label: Depth
   - type: text
     name: root
-    label: root
+    label: Root
   - type: boolean
     name: visible
-    label: visible
+    label: Visible
 - type: field_group
   name: items
   label: Menu items
