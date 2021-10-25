@@ -4,31 +4,59 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - name: docKey
   type: text
   config:
     required: true
   label: Doc Key
-  description: Translation key
+  description: Key shared by translated versions
 - type: text
   name: description
-  label: description
+  label: Description
 - type: text
   name: author
-  label: author
+  label: Author
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    date_format: MM/DD/YYYY
+    required: true
+  default: now
 - type: text
   name: category
-  label: category
+  label: Category
+  description: Optional section ou topic
 - type: list
   name: tags
-  label: tags
+  label: Tags
   config:
-    use_select: true
+    use_select: false
     source:
       type: simple
+- name: priority
+  type: select
+  default: " Normal"
+  config:
+    required: true
+    options:
+    - High
+    - " Normal"
+    - Low
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Priority
+  description: How is featured the article
+- name: visible
+  type: boolean
+  label: Visible
+  description: ready to publish?
+  default: true
 pages:
 - src/en/blog/posts/5th-blog-post.md
