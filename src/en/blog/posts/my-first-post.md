@@ -6,8 +6,9 @@ author: CG
 date: 2020-10-19T17:00:00Z
 tags: []
 docKey: first-blogpost
-
+priority: normal
 ---
+
 ## Est digni enim factus unam terrae
 
 Enim quod solent dominae, more in aestu nec dixit, quo! Unda stirpis repetatne

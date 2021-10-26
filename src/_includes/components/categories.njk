@@ -1,5 +1,7 @@
-<nav class="border-0 ">
-    <div class="bg-white text-yelow-600 font-medium p-0 my-4 rounded w-max ">
+{% set categorycode = categorycode or "techno" %}
+
+<nav class="border-0 flex flex-wrap gap-4">
+    <div class="bg-white text-yelow-600 font-medium p-0 m-0 rounded flex-shrink-0 w-auto md:w-full">
         <a href="/{{base}}/">
             {{ btn_all | upper }}
         </a>
@@ -7,9 +9,9 @@
     {% set navData = navigation.items[locale] %}
 
     {% for item in navData %}
-    {% if item.parent === "techno" %}
+    {% if item.parent === categorycode %}
 
-    <div class="bg-white text-yellow-600 font-medium p-0 my-4 rounded w-max ">            
+    <div class="bg-white text-yellow-600 font-medium p-0 m-0 rounded flex-shrink-0 w-auto md:w-full">            
         <a href="/{{base}}/{{ item.slug }}/">
             {{ item.text | upper }}
         </a>     
