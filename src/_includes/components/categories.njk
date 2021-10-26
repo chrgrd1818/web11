@@ -1,5 +1,5 @@
 <nav class="border-0 ">
-    <div class="bg-yellow-600 text-white font-medium p-4 my-4 rounded w-max ">
+    <div class="bg-white text-yelow-600 font-medium p-0 my-4 rounded w-max ">
         <a href="/{{base}}/">
             {{ btn_all | upper }}
         </a>
@@ -9,7 +9,7 @@
     {% for item in navData %}
     {% if item.parent === "techno" %}
 
-    <div class="bg-yellow-600 text-white font-medium p-4 my-4 rounded w-max ">            
+    <div class="bg-white text-yellow-600 font-medium p-0 my-4 rounded w-max ">            
         <a href="/{{base}}/{{ item.slug }}/">
             {{ item.text | upper }}
         </a>     

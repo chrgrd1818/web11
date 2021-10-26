@@ -1,8 +1,10 @@
-<div class="w-full sticky top-0 bg-white z-50 bg-opacity-50">
-    <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
+<div id="mainMenu" class="w-full sticky top-0 z-50 bg-white">
+    <nav class="flex items-center justify-center lg:justify-between flex-wrap 
+    py-2 lg:px-0 container max-w-screen-xl px-8 mx-auto" 
+    x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         {% set navData = navigation.items[locale] %}
         <!--Logo etc-->
-        <div class="logo text-gray-900">
+        <div class="logo text-black">
             <a href="/{{ navData[0].slug }}/" class="m-0 p-0" >
                 <span class="inline-block -mb-px pr-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -29,7 +31,7 @@
                 <ul id="nav_list" class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
                     {% for item in navPages %}{% if item.parent== "root" and item.key != "home"%}
                         <li class="nav__item mr-3">
-                            <a @click="isOpen = false" class="text-ml inline-block text-gray-900 font-medium no-underline hover:text-blue-400 py-2 px-4" 
+                            <a @click="isOpen = false" class="text-ml inline-block text-black font-medium no-underline hover:text-black py-2 px-4" 
                             href="/{{ item.slug }}/">{{ item.text}}</a>
                         </li>
                     {% endif %}{% endfor %}

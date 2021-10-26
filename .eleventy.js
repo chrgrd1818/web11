@@ -24,8 +24,12 @@ module.exports = function (eleventyConfig) {
   });
 
  
-  eleventyConfig.addFilter("categoryFilter", function(collection, cat) {
-    let filtered = collection.filter((p) => p.data.category === cat);
+  eleventyConfig.addFilter("categoryFilter", function(collection, category) {
+    let filtered = collection.filter((p) => p.data.category === category);
+    return filtered || [];
+  });
+  eleventyConfig.addFilter("priorityFilter", function(collection, priority) {
+    let filtered = collection.filter((p) => p.data.priority === priority);
     return filtered || [];
   });
 

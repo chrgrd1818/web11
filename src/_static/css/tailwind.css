@@ -16,15 +16,15 @@
 .seablue {
   color: #5881c0;
 }
- /* // */
+ /* /@apply bg-white ;/ */
 body#theme-t1 {
  
-  @apply bg-white ;
+    background: linear-gradient(180deg, #18607c, #18607c 100%);
 }
 
-.herowave {
-  background: linear-gradient(90deg, #4430b9 0%, #daae51 100%);
-}
+
+body#theme-t1 .herowave {}
+  
 #theme-t1 .is-active {
   @apply font-bold text-black
 }

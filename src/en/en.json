@@ -7,7 +7,7 @@
   "permalink": "{{ title | slug }}/",
   "docKey": "home",
   "btn_readmore": "Read more",
-  "btn_all": "All",
+  "btn_all": "All topics",
   "labels": {
     "CATEGORY": "CATEGORIES"
   },
