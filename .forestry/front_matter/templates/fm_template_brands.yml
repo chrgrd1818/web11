@@ -1,0 +1,37 @@
+---
+label: fm_template_brands
+hide_body: true
+fields:
+- type: field_group
+  name: Brands_carousel
+  label: Brands_carousel
+  fields:
+  - type: field_group
+    name: Configs
+    label: Configs
+    fields:
+    - type: text
+      name: Src
+      label: Src
+    - type: boolean
+      name: Autoplay
+      label: Autoplay
+    - type: boolean
+      name: Navigation
+      label: Navigation
+  - type: field_group_list
+    name: Contents
+    label: Contents
+    fields:
+    - type: text
+      name: Title
+      label: Title
+    - type: text
+      name: Link
+      label: Link
+    - type: text
+      name: Description
+      label: Description
+    - type: file
+      name: File
+      label: File
