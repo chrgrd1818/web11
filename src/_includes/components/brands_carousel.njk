@@ -1,0 +1,20 @@
+ 
+{% set configs = site.Brands_carousel.Configs %}
+{% set contents = site.Brands_carousel.Contents %}
+
+<div id="brands_carousel" class="overflow-hidden">
+    <div class="flex flex-wrap gap-8 justify-between">
+        {% for item in contents %}
+        <div class="brand w-48 md:w-64 border-2 md:flex-shrink-0">
+            <a href="{{ item.Link }}">
+                <img 
+                class="w-full object-cover object-center" 
+                src="{{ site.Brands_carousel.Configs.Src }}/{{ item.File }}"
+                alt="{{ item.Title }}">
+                
+            </a>
+            <p>{{ item.Description }}<p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
