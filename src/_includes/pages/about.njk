@@ -1,8 +1,8 @@
 <section class=""> 
-
-    {% include "partials/headline.njk" %}
-    <p>
-        {{ intro | safe }}
-    </p>
-    
+{% set list = collections.aboutpost | LocaleFilter(locale) %}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+    {% for post in list %}
+        <div>{% include "components/article-item_image.njk" %}</div>
+    {% endfor %}
+    </div>   
 </section>

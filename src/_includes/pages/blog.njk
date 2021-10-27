@@ -15,8 +15,8 @@
         {% if selected %}
         {% set postslist = postslist | categoryFilter(selected) %}
         {% endif %}
-        {% set __Readmore = btn_readmore %}
-        {% set __All = btn_all %}
+       
+        
     
             <div class="grid grid-cols-1 gap-8 mb-12">
             {% for post in postslist | priorityFilter(settings.priorities.HIGH) %}

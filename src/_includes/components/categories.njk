@@ -1,9 +1,10 @@
 {% set categorycode = categorycode or "techno" %}
+{% set __All = btn_all %}
 
 <nav class="border-0 flex flex-wrap gap-4">
     <div class="bg-white text-yelow-600 font-medium p-0 m-0 rounded flex-shrink-0 w-auto md:w-full">
         <a href="/{{base}}/">
-            {{ btn_all | upper }}
+            {{ __All | upper }}
         </a>
     </div>
     {% set navData = navigation.items[locale] %}

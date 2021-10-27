@@ -1,0 +1,6 @@
+{
+   "layout": "post_layout",
+    "permalink": "about-us/{{ title | slug }}/",
+    "tags": "aboutpost"
+   
+}
