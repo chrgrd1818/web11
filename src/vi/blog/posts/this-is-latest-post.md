@@ -7,7 +7,7 @@ tags: []
 docKey: fourth-blogpost
 priority: " Normal"
 visible: true
-category: ''
+category: techcategory2
 
 ---
 ## Vivacisque vanam merui cruentos despexit Venus glaciali
