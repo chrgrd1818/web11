@@ -1,13 +1,15 @@
 ---
-title: "cong nghe!"
+title: cong nghe x!
 description: Lorem markdownum fatum virosque, virtute curre.
 author: CG
 date: 2021-10-15T11:33:04.480+00:00
 tags: []
 category: techcategory2
 docKey: tech2
----
+priority: " Normal"
+visible: true
 
+---
 ## Vivacisque vanam merui cruentos despexit Venus glaciali
 
 Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
