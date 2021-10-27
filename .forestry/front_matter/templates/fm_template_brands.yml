@@ -13,6 +13,7 @@ fields:
     - type: text
       name: Src
       label: Src
+      description: Image folder
     - type: boolean
       name: Autoplay
       label: Autoplay
@@ -29,9 +30,11 @@ fields:
     - type: text
       name: Link
       label: Link
+      default: "#"
     - type: text
       name: Description
       label: Description
     - type: file
       name: File
       label: File
+      default: ".forestry/front_matter/templates/logo-300x120.png"
