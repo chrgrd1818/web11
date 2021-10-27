@@ -1,14 +1,16 @@
 ---
 title: Tech 1!
-description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis ministrarum vestibus iudice, fratri inque agit ait.
+description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
+  ministrarum vestibus iudice, fratri inque agit ait.
 author: CG
 date: 2021-10-15T11:33:04.480+00:00
 tags: []
 category: techcategory2
 docKey: tech1
-priority: low
----
+priority: High
+visible: true
 
+---
 ## Est digni enim factus unam terrae
 
 Enim quod solent dominae, more in aestu nec dixit, quo! Unda stirpis repetatne
