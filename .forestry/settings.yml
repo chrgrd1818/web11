@@ -9,20 +9,25 @@ sections:
   label: Settings
   create: all
   match: "**/*"
+  templates:
+  - fm_template_brands
+  - fm_template_nav
 - type: directory
   path: src/vi
   label: Vietnamese
   create: all
   match: "**/*"
   templates:
-  - fm_template_1
+  - fm_template_page
+  - fm_template_post
 - type: directory
   path: src/en
   label: English
   create: all
   match: "**/*"
   templates:
-  - fm_template_1
+  - fm_template_page
+  - fm_template_post
 upload_dir: src/_static/img
 public_path: "/_static/img"
 front_matter_path: ".forestry/front_matter/templates"
