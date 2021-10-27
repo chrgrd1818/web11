@@ -1,12 +1,15 @@
 ---
-title: "This is my third post"
+title: This is my third post
 description: Lorem markdownum fatum virosque, virtute curre.
 date: 2021-09-03
 author: CG
 tags: []
 docKey: third-blogpost
----
+priority: " Normal"
+visible: true
+category: ''
 
+---
 ## Vivacisque vanam merui cruentos despexit Venus glaciali
 
 Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
