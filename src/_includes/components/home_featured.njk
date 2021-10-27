@@ -1,12 +1,12 @@
 <div class="flex flex-wrap gap-8 justify-between">
     {% set __Readmore = btn_readmore %}
-    {% set technoposts = collections.technopost | LocaleFilter(locale) | priorityFilter("high") %}
+    {% set technoposts = collections.technopost | LocaleFilter(locale) | priorityFilter("High") %}
 
     {% for post in technoposts %}
     <div class="w-full md:flex-1">{% include "components/article-item_image.njk" %}</div>
     {% endfor %}
 
-    {% set blogposts = collections.blogpost | LocaleFilter(locale) | priorityFilter("high") %}
+    {% set blogposts = collections.blogpost | LocaleFilter(locale) | priorityFilter("High") %}
    
     {% for post in blogposts %}
     <div class="w-full md:flex-1">{% include "components/article-item_image.njk" %}</div>

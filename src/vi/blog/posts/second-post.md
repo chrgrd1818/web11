@@ -5,7 +5,7 @@ date: 2021-09-02
 author: CG
 tags: []
 docKey: second-blogpost
-priority: " Normal"
+priority: "Normal"
 visible: true
 category: ''
 

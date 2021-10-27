@@ -5,9 +5,9 @@ date: 2021-09-23
 author: CG
 tags: []
 docKey: fourth-blogpost
-priority: " Normal"
+priority: "High"
 visible: true
-category: techcategory2
+category: 
 
 ---
 ## Vivacisque vanam merui cruentos despexit Venus glaciali

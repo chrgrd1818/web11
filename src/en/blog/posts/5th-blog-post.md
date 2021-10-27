@@ -5,7 +5,7 @@ description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos sa
   ministrarum vestibus iudice, fratri inque agit ait.
 author: CG
 date: 2021-10-19T17:00:00.000+00:00
-category: techcategory2
+category: 
 tags: []
 priority: High
 visible: true

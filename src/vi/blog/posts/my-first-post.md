@@ -5,9 +5,9 @@ author: CG
 date: 2020-09-01
 tags: []
 docKey: first-blogpost
-priority: " Normal"
+priority: "Normal"
 visible: true
-category: techcategory1
+category: 
 
 ---
 ## Est digni enim factus unam terrae

@@ -7,7 +7,7 @@ date: 2021-10-15T11:33:04.480+00:00
 tags: []
 category: techcategory1
 docKey: tech3
-priority: High
+priority: Normal
 visible: true
 
 ---

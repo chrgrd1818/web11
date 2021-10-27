@@ -19,21 +19,21 @@
         {% set __All = btn_all %}
     
             <div class="grid grid-cols-1 gap-8 mb-12">
-            {% for post in postslist | priorityFilter("high") %}
+            {% for post in postslist | priorityFilter("High") %}
             
                 <div>{% include "components/article-item_featured.njk" %}</div>
                
             {% endfor %}
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-            {% for post in postslist | priorityFilter("normal") %}
+            {% for post in postslist | priorityFilter("Normal") %}
             
                 <div>{% include "components/article-item_image.njk" %}</div>
               
             {% endfor %}
             </div> 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-            {% for post in postslist | priorityFilter("low") %}
+            {% for post in postslist | priorityFilter("Low") %}
             
                 <div>{% include "components/article-item_line.njk" %}</div>
               

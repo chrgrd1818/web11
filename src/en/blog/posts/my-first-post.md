@@ -6,7 +6,7 @@ author: CG
 date: 2020-10-19T17:00:00.000+00:00
 tags: []
 docKey: first-blogpost
-priority: High
+priority: Normal
 visible: true
 category: ''
 
