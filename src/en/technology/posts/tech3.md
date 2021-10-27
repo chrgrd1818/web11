@@ -1,14 +1,16 @@
 ---
 title: Tech 3!
-description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis ministrarum vestibus iudice, fratri inque agit ait.
+description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
+  ministrarum vestibus iudice, fratri inque agit ait.
 author: CG
 date: 2021-10-15T11:33:04.480+00:00
 tags: []
 category: techcategory1
 docKey: tech3
-priority: normal
----
+priority: High
+visible: true
 
+---
 ## Vivacisque vanam merui cruentos despexit Venus glaciali
 
 Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
