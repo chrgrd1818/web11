@@ -61,6 +61,7 @@ fields:
 pages:
 - src/en/blog/posts/5th-blog-post.md
 - src/en/blog/posts/my-third-big-post.md
+- src/en/blog/posts/second-post.md
 - src/en/technology/posts/tech1.md
 - src/en/technology/posts/tech2.md
 - src/en/technology/posts/tech3.md
