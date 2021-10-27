@@ -1,39 +1,39 @@
+---
 Brands_carousel:
   Configs:
     Src: "/_static/img/logos/"
-    Autoplay: True
-    Navigation: False
+    Autoplay: true
+    Navigation: false
   Contents:
-    - Title: sample1
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-    - Title: sample2
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-    - Title: sample3
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-    - Title: sample4
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-    - Title: sample5
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-    - Title: sample6
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-    - Title: sample7
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-    - Title: sample8
-      Link: '#'
-      Description: 
-      File: logo-300X120.png
-  
+  - Title: Sample 1
+    Link: "#"
+    Description: ''
+    File: logo-300x120.png
+  - Title: sample2
+    Link: "#"
+    Description: 
+    File: logo-300X120.png
+  - Title: sample3
+    Link: "#"
+    Description: 
+    File: logo-300X120.png
+  - Title: sample4
+    Link: "#"
+    Description: 
+    File: logo-300X120.png
+  - Title: sample5
+    Link: "#"
+    Description: 
+    File: logo-300X120.png
+  - Title: sample6
+    Link: "#"
+    Description: 
+    File: logo-300X120.png
+  - Title: sample7
+    Link: "#"
+    Description: 
+    File: logo-300X120.png
+  - Title: sample8
+    Link: "#"
+    Description: 
+    File: logo-300X120.png
