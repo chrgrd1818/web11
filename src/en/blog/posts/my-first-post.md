@@ -3,12 +3,14 @@ title: This is my first post
 description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
   ministrarum vestibus iudice, fratri inque agit ait.
 author: CG
-date: 2020-10-19T17:00:00Z
+date: 2020-10-19T17:00:00.000+00:00
 tags: []
 docKey: first-blogpost
-priority: normal
----
+priority: High
+visible: true
+category: ''
 
+---
 ## Est digni enim factus unam terrae
 
 Enim quod solent dominae, more in aestu nec dixit, quo! Unda stirpis repetatne
