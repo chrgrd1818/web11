@@ -18,8 +18,8 @@
 }
  /* /@apply bg-white ;/ */
 body#theme-t1 {
- 
-    background: linear-gradient(180deg, #18607c, #18607c 100%);
+  @apply  w-full m-0 p-0;
+  background: linear-gradient(180deg, #18607c, #18607c 100%);
 }
 
 

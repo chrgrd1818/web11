@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="{{ locale }}" dir="{{ dir }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {{title}}
-    </title>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
-    {% block head %}{% endblock %}
-    <link rel="stylesheet" type="text/css" href="/_static/css/style.css"/>
-     <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script>
-    <!-- open graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:site_name" content="lea-tortay">
-    <meta property="og:description" content="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {{title}}
+        </title>
+        {% if description %}
+            <meta name="description" content="{{description}}"/>
+        {% endif %}
+        {% block head %}{% endblock %}
+        <link rel="stylesheet" type="text/css" href="/_static/css/style.css"/>
+        <script
+            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+            defer
+        ></script>
 
-    <!-- twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@lea_tortay">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
+        <!-- open graph -->
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="">
+        <meta property="og:image" content="">
+        <meta property="og:site_name" content="lea-tortay">
+        <meta property="og:description" content="">
 
-  </head>
-  <body id="theme-t1" class="dockey_{{docKey}}">
-    {% include "./components/navbar.njk" %}
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@lea_tortay">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
 
-    {{ content | safe }}
-
-    {% include "./partials/footer.njk" %}
-
-    
-<script>
-  /*  window.onscroll = function() {myFunction()};
-
-  function myFunction() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-         
-           document.getElementById("mainMenu").classList.toggle("top-menu-dark");
-        
-      } else {
-           document.getElementById("mainMenu").classList.toggle("top-menu-dark");
-          
-        
-      }
-  } */
-</script>
-  </body>
+    </head>
+    <body id="theme-t1" class="dockey_{{docKey}}">
+        <div id="mainMenu" class="w-full sticky top-0 z-50 bg-white">
+            {% include "./components/navbar.njk" %}
+        </div>
+        <div>
+            {{ content | safe }}
+        <div>
+            {% include "./partials/footer.njk" %}
+        </div>
+    </body>
 </html>
