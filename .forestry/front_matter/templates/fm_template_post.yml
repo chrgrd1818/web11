@@ -60,3 +60,4 @@ fields:
   default: true
 pages:
 - src/en/blog/posts/5th-blog-post.md
+- src/en/technology/posts/tech4.md
