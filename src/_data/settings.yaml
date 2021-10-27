@@ -5,9 +5,14 @@ baseurl: https://web11.pages.dev/
 locale: vi
 dir: ltr
 locales:
-- label: English
-  code: en
-  active: true
-- label: Tieng viet
-  code: vi
-  active: true
+  - label: English
+    code: en
+    active: true
+  - label: Tieng viet
+    code: vi
+    active: true
+priorities:
+  - HIGH: "High"
+  - NORMAL: "Normal"
+  - LOW: "Low"
+  
