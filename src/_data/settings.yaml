@@ -12,7 +12,7 @@ locales:
     code: vi
     active: true
 priorities:
-  - HIGH: "High"
-  - NORMAL: "Normal"
-  - LOW: "Low"
+  HIGH: "High"
+  NORMAL: "Normal"
+  LOW: "Low"
   
