@@ -1,12 +1,15 @@
 ---
-title: "This is my first post"
+title: This is my first post
 description: Lorem markdownum fatum virosque, virtute curre.
 author: CG
 date: 2020-09-01
 tags: []
 docKey: first-blogpost
----
+priority: " Normal"
+visible: true
+category: techcategory1
 
+---
 ## Est digni enim factus unam terrae
 
 Enim quod solent dominae, more in aestu nec dixit, quo! Unda stirpis repetatne
