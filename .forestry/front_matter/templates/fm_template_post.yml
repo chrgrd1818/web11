@@ -59,6 +59,7 @@ fields:
   description: ready to publish?
   default: true
 pages:
+- src/en/about/posts/values.md
 - src/en/blog/posts/5th-blog-post.md
 - src/en/blog/posts/my-first-post.md
 - src/en/blog/posts/my-third-big-post.md
