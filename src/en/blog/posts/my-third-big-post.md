@@ -1,13 +1,16 @@
 ---
-title: "This is my third post"
-description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis ministrarum vestibus iudice, fratri inque agit ait.
+title: This is my third post
+description: Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
+  ministrarum vestibus iudice, fratri inque agit ait.
 date: 2021-09-03
 author: CG
 tags: []
 docKey: third-blogpost
-priority: high
----
+priority: High
+visible: true
+category: ''
 
+---
 ## Vivacisque vanam merui cruentos despexit Venus glaciali
 
 Lorem markdownum fatum virosque, virtute curre. Haesurum solitos saevis
