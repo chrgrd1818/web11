@@ -43,6 +43,20 @@
                 <span class="block leading-none font-medium -mt-1">NU</span>
             </button>
         </div>
+        <div class="hidden h-screen">
+            <ul class="flex flex-col space-y-4">
+                {% for item in navPages %}
+                {% if item.parent== "root" and item.key != "home"%}
+                    <li class="flex-1">
+                        <a class="text-black font-medium no-underline hover:text-black" 
+                        href="/{{ item.slug }}/">
+                            {{ item.text}}
+                        </a>
+                    </li>
+                {% endif %}
+                {% endfor %}
+            </ul>  
+        </div>    
 
     </div>
 </nav>
