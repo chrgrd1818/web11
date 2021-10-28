@@ -18,10 +18,17 @@
 }
  /* /@apply bg-white ;/ */
 body#theme-t1 {
-  @apply  w-full m-0 p-0;
-  background: linear-gradient(180deg, #18607c, #18607c 100%);
+  @apply  w-full m-0 p-0 bg-blue-100;
+  
 }
 
+.radial-bg {background-image: 
+  radial-gradient(circle at top center, #FFF, #5881c0 50%, #333 80%);
+  
+}
+
+.bigcircle{ width: 24rem; height:24rem; }
+.smallcircle{ width: 12rem; height:12rem; }
 
 body#theme-t1 .herowave {}
   

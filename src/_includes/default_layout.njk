@@ -36,12 +36,12 @@
 
     </head>
     <body id="theme-t1" class="dockey_{{docKey}}">
-        <div id="mainMenu" class="w-full sticky top-0 z-50 bg-white">
+        <div id="mainMenu" class="w-full sticky top-0 z-50">
             {% include "./components/navbar.njk" %}
         </div>
         <div>
             {{ content | safe }}
-        <div>
+        <div class="bg-gray-800">
             {% include "./partials/footer.njk" %}
         </div>
     </body>
