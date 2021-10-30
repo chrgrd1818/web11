@@ -11,8 +11,9 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@barba/core": "^2.9.7",
     "@tailwindcss/typography": "^0.3.1",
-    "alpinejs": "^3.2.4",
+    "alpinejs": "^3.4.2",
     "browser-sync": "^2.26.14",
     "cross-env": "^7.0.2",
     "cssnano": "^5.0.8",
@@ -24,7 +25,10 @@
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "autoprefixer": "^10.1.0",
+    "lazysizes": "^5.3.2",
     "postcss": "^8.2.1"
   }
+  
 }

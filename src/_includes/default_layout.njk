@@ -11,12 +11,10 @@
             <meta name="description" content="{{description}}"/>
         {% endif %}
         {% block head %}{% endblock %}
-        <link rel="stylesheet" type="text/css" href="/_static/css/style.css"/>
-        <script 
-            src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-        <script
-            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/_static/css/style.css"/> 
+        <script src="/_static/js/barba.min.js"></script>
+        <script src="/_static/js/anime.min.js"></script>       
+        <script src="/_static/js/site.js"></script>
 
         <!-- open graph -->
         <meta property="og:type" content="article">
@@ -46,57 +44,7 @@
         </div>
 
         
-        <script type="text/javascript">
-        var tl = gsap.timeline();
-        var tween1 = gsap.to("#_transpage ._line", 
-        {duration: 1, width: '100%', ease: "none", stagger: 0, delay: 0});
-        var tween2 = gsap.to("#_transpage ._line", 
-        {duration: 1, width: '0%', ease: "none", stagger: 0, delay: 0});
+   
 
-
-        function pageTransitionIn() {
-
-        
-            tl.to("#_transpage", {
-                opacity: 1,
-                autoAlpha: 1,
-                display: 'block',
-            });
-            tl.add(tween1);
-           
-            
-        }
-
-        function pageTransitionOut() {
-            //tl.add(tween2);
-            tl.to("#_transpage", {
-                opacity: 0,
-                autoAlpha: 0,
-                display: 'none',
-            });
-          
-        }
-
-        barba.init({
-            transitions: 
-            [{
-                name: 'lines-transition',
-                leave(data) {
-                    gsap.to(data.current.container, {
-                        opacity: 0
-                    });
-                    pageTransitionIn();
-                },
-                enter(data) {
-                    gsap.from(data.next.container, {
-                        opacity: 0
-                    });
-                    pageTransitionOut();
-                }
-            }]
-        
-        })
-      
-        </script>
     </body>
 </html>

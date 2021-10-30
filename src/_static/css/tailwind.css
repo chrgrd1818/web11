@@ -22,15 +22,19 @@ body#theme-t1 {
   
 }
 
-.radial-bg {background-image: 
-  radial-gradient(circle at top center, #FFF, #5881c0 50%, #333 80%);
-  
+
+#loader {
+  @apply absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full  flex flex-col items-stretch opacity-0 invisible;
 }
 
-.bigcircle{ width: 24rem; height:24rem; }
-.smallcircle{ width: 12rem; height:12rem; }
+.loader-row {
+  @apply flex-1 block w-0 relative;
+}
 
-body#theme-t1 .herowave {}
+.is-transitioning {
+  pointer-events: none;
+  cursor: progress;
+}
   
 #theme-t1 .is-active {
   @apply font-bold text-black
