@@ -61,7 +61,7 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./node_modules/alpinejs/dist/cdn.min.js": "./_static/js/alpine.js",
+    "./src/_static/js/alpine.min.js": "./_static/js/alpine.min.js",
     "./src/_static/js/site.js": "./_static/js/site.js",
     "./src/_static/js/anime.min.js": "./_static/js/anime.min.js",
     "./src/_static/js/barba.min.js": "./_static/js/barba.min.js",

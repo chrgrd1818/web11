@@ -1,27 +1,6 @@
 
-//import 'lazysizes'
-//const anime = require('anime.min.js');
-//const Alpine = require('alpinejs');
-//const barba = require('barba.min.js');
-
 function init() { 
 
-    function menuAnim() {
-        
-        anime.set('#ListMenuMobile', { display: 'block', opacity: 0, visibility: 'visible', 'z-index': 50})
-        anime({
-            targets: '#ListMenuMobile',
-            duration: 500,
-         
-            delay: 0,
-            
-            opacity:1,
-           
-            easing: 'easeInOutSine',
-        });
-        
-    }
-    document.getElementById('BtnMenuMobile').onclick = function() { menuAnim() };
 
 
     

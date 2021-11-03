@@ -1,33 +1,39 @@
+<nav id="mainMenu" x-data="{ open: false }" 
+x-bind:class=" open ? 'h-full' : ''"
+class="fixed top-0 left-0 w-full z-50 bg-blue-100" 
+style="overflow: hidden;">
 
-<nav class="py-2 container max-w-screen-xl px-8 py-4">
+<div class="container max-w-screen-xl px-8 py-4">
     
-
-    <div class="flex flex-row justify-between items-center align-center">
+    <div class="flex flex-row justify-between items-end">
         {% set navData = navigation.items[locale] %}
 
-        <!--Logo etc-->
-        <div class="">
-            <a class="m-0 p-0 inline-flex text-black" href="/{{ navData[0].slug }}/" >
-                <div class="-mb-1 pr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                </div>
-                <div class="font-medium text-lg">{{ settings.name }}</div>
-            </a>
+        <!--Logo-->
+        <div class="text-black font-medium text-xl">
+            <ul class="inline-flex space-x-1">
+                <li class="flex-shrink-0 flex-grow-0">
+                    <a class="no-underline hover:text-blue-400" href="/{{ navData[0].slug }}/">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                        </svg>
+                    </a>  
+                <li> 
+                    <a class="no-underline hover:text-blue-400" href="/{{ navData[0].slug }}/">
+                        {{ settings.name }}    
+                    </a>
+                </li>
+            </ul>
         </div>
 
         <!--Menu-->
-        <div class=" hidden md:block">
+        <div class="hidden md:block text-xl text-black font-medium">
         {% set navPages = navData %}
-         
-            
-            <ul class="inline-flex space-x-4">
+            <ul class="inline-flex space-x-8">
                 {% for item in navPages %}
                 {% if item.parent== "root" and item.key != "home"%}
-                    <li class="flex-shrink-0">
-                        <a class="text-black font-medium no-underline hover:text-black" 
-                        href="/{{ item.slug }}/">
+                    <li class="flex-shrink-0 flex-grow-0">
+                        <a href="/{{ item.slug }}/"
+                        class="no-underline hover:text-blue-400">
                             {{ item.text}}
                         </a>
                     </li>
@@ -36,29 +42,36 @@
             </ul>   
         </div>
 
-        <!--Toggle button (hidden on large screens)-->
-        <div id="BtnMenuMobile" class="block md:hidden">
-            <button class="text-black uppercase "> 
-                <span class="block leading-none font-medium ">ME</span>
-                <span class="block leading-none font-medium -mt-1">NU</span>
+        <!--Toggle buttons -->
+        <div class="block md:hidden text-black text-xl font-medium ">
+            <button @click="open = true" x-show=" ! open" > 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <button @click="open = false" x-show="open"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>   
             </button>
         </div>
-        <div id="ListMenuMobile" class="absolute top-0 left-0 hidden w-full h-screen bg-blue-100">
-            <div class="p-10">
-                <ul class="flex flex-col space-y-4">
-                    {% for item in navPages %}
-                    {% if item.parent== "root" and item.key != "home"%}
-                        <li class="flex-1">
-                            <a class="text-2xl text-black font-medium no-underline hover:text-black" 
-                            href="/{{ item.slug }}/">
-                                {{ item.text}}
-                            </a>
-                        </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>  
-            </div>
-        </div>    
-
     </div>
+    <div x-show="open" class="bg-blue-100 w-full h-full">
+        <div class="py-16 text-xl text-black font-medium">
+            <ul class="flex flex-col space-y-8">
+                {% for item in navPages %}
+                {% if item.parent== "root" and item.key != "home"%}
+                    <li class="flex-1">
+                        <a @click="open = false" class="no-underline hover:text-blue-400" 
+                        href="/{{ item.slug }}/">
+                            {{ item.text}}
+                        </a>
+                    </li>
+                {% endif %}
+                {% endfor %}
+            </ul>  
+        </div>
+    </div>  
+
+</div>
 </nav>

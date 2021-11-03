@@ -12,6 +12,7 @@
         {% endif %}
         {% block head %}{% endblock %}
         <link rel="stylesheet" type="text/css" href="/_static/css/style.css"/> 
+        <script src="/_static/js/alpine.min.js" defer></script>
         <script src="/_static/js/barba.min.js"></script>
         <script src="/_static/js/anime.min.js"></script>       
         <script src="/_static/js/site.js"></script>
@@ -33,18 +34,16 @@
     </head>
     <body id="theme-t1" class="dockey_{{docKey}}" data-barba="wrapper">
     {% include "./partials/transition.njk"%}
-        <div id="mainMenu" class="w-full sticky top-0 z-25">
+        <div>
             {% include "./components/navbar.njk" %}
         </div>
-        <main id="main" data-barba="container" data-barba-namespace="{{ locale}}_{{ docKey }}">
+       
+        <main class="mt-16" id="main" data-barba="container" data-barba-namespace="{{ locale}}_{{ docKey }}">
             {{ content | safe }}
         </main>
-        <div class="bg-gray-800">
+        
+        <div>
             {% include "./partials/footer.njk" %}
         </div>
-
-        
-   
-
     </body>
 </html>
