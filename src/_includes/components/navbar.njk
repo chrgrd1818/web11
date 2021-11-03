@@ -1,11 +1,11 @@
 <nav id="mainMenu" x-data="{ open: false }" 
 x-bind:class=" open ? 'h-full' : ''"
-class="fixed top-0 left-0 w-full z-50 bg-blue-100" 
+class="fixed top-0 left-0 w-full z-20 bg-white" 
 style="overflow: hidden;">
 
 <div class="container max-w-screen-xl px-8 py-4">
     
-    <div class="flex flex-row justify-between items-end">
+    <div class="flex flex-row justify-between md:items-center items-end">
         {% set navData = navigation.items[locale] %}
 
         <!--Logo-->
@@ -54,7 +54,7 @@ style="overflow: hidden;">
             </button>
         </div>
     </div>
-    <div x-show="open" class="bg-blue-100 w-full h-full">
+    <div x-show="open" class="w-full h-full">
         <div class="py-16 text-xl text-black font-medium">
             <ul class="flex flex-col space-y-8">
                 {% for item in navPages %}

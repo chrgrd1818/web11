@@ -32,16 +32,16 @@
         <meta name="twitter:image" content="">
 
     </head>
-    <body id="theme-t1" class="dockey_{{docKey}}" data-barba="wrapper">
-    {% include "./partials/transition.njk"%}
+    <body id="theme-t1" class="w-full m-0 p-0 bg-white" data-key="dockey_{{docKey}}" data-barba="wrapper">
+        <div>
+            {% include "./partials/transition.njk"%}
+        <div>
         <div>
             {% include "./components/navbar.njk" %}
         </div>
-       
-        <main class="mt-16" id="main" data-barba="container" data-barba-namespace="{{ locale}}_{{ docKey }}">
+        <main class="mt-20" id="main" data-barba="container" data-barba-namespace="{{ locale}}_{{ docKey }}">
             {{ content | safe }}
         </main>
-        
         <div>
             {% include "./partials/footer.njk" %}
         </div>

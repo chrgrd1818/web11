@@ -1,9 +1,5 @@
 
-function init() { 
-
-
-
-    
+function init() {  
 
     function animeOut() {
         anime.set('.loader', { opacity: 1, visibility: 'visible', display: 'flex' })
@@ -47,7 +43,7 @@ function init() {
 }
 
 window.addEventListener('load', function() {
-    init();
+   // init();
 });
 
 
